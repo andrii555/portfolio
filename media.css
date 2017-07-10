@@ -1,0 +1,124 @@
+@media only screen and (max-width: 993px) {
+
+
+    /*burgermenu*/
+
+
+    .btn-menu {
+        color: #fff;
+        background-color: #f1f1f1;
+        float: left;
+        top: 5px;
+        left: 5px;
+        cursor: pointer;
+        transition: left .23s;
+        z-index: 3;
+        width: 30px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        display: block;
+        padding: 24px 16px;
+        margin-left: -16px;
+        margin-top: -16px;
+
+
+    }
+    .btn-menu:hover {
+        background-color: #b7b7b7;
+    }
+    .btn-menu span {
+        display: block;
+        height: 5px;
+        background-color: #616161;
+        margin: 5px 0 0;
+        transition: all .1s linear .23s;
+        position: relative;
+    }
+    .btn-menu span.first {
+        margin-top: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu {
+        left: 220px;
+        top: 32px;
+        width: 50px;
+        padding: 32px 16px;
+        position: fixed;
+        background-color: white;
+
+
+
+    }.hidden-menu-ticker:checked ~ .btn-menu:hover {
+        background-color: #b7b7b7;
+         }
+
+    .hidden-menu-ticker:checked ~ .hidden-menu {
+        left: 0;
+    }
+    .hidden-menu-ticker:checked ~ .back-hidden-menu {
+        left: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.first {
+        transform: rotate(45deg);
+        top: 18px;
+        background-color: black;
+        height: 13px;
+        border-radius: 3px;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.second {
+        opacity: 0;
+
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.third {
+        transform: rotate(-45deg);
+        top: -10px;
+        background-color: black;
+        height: 13px;
+        border-radius: 3px;
+    }
+
+
+/*burgermenu*/
+
+    .menu {
+        margin-left: -300px;
+        transition: 1s;
+    }
+    .main {
+        margin: 0;
+        transition: 1s;
+
+
+    }
+
+    .top a > i {
+        display: inline-table;
+    }
+
+    .top img {
+        display: inline-table;
+    }
+    .top h2 {
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .filter button:nth-child(4), .filter button:nth-last-child(1){
+        display: none;
+    }
+    .col1,.col2, .col3 {
+        width: 100%;
+    }
+    .down .ff{
+        width: 100%;
+    }
+    .basic, .pro, .premium {
+        width: 100%;
+    }
+    .contmenu ul > li {
+        width: 100%;
+    }
+    .fleft, .fcenter, .fright {
+        width: 100%;
+    }
+}
